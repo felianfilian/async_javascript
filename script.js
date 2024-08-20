@@ -1,7 +1,3 @@
-console.log(1);
+const request = new XMLHttpRequest();
 
-setTimeout(() => {
-  console.log(3);
-}, 2000);
-
-console.log(2);
+request.open("GET", "https://jsonplaceholder.typicode.com/todos");
